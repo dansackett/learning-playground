@@ -1,6 +1,8 @@
 My Personal Goals
 ========
 
+Inspired by [shalotelli](https://github.com/shalotelli/shas-goals).
+
 An outline of my personal goals are listed below. These tasks are broken down in Issues.
 
 - [ ] Further Angular skills
