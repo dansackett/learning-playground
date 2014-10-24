@@ -15,6 +15,8 @@ An outline of my personal goals are listed below. These tasks are broken down in
   - [ ] Become better at working with the file system and writing scripts
   - [ ] Contribute to an open source Python project
   - [ ] Learn how to use tox to test other Python versions with py.test
+  - [ ] Learn how to use gevent with zeromq
+  - [ ] Finish all 33 Levels of PythonChallenge.com
 - [ ] Improve my Django skills
   - [ ] Build a pluggable Django app for mass consumption and add to pypi
   - [ ] Learn how to use Django Rest Framework with Angular
