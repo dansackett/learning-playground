@@ -11,7 +11,7 @@ An outline of my personal goals are listed below. These tasks are broken down in
   - [ ] Blog about getting started with Angular
 - [ ] Continuing learning intricacies of Python
   - [ ] Become better with using built-in functions
-  - [ ] Become better with itertools functions
+  - [X] Become better with itertools functions
   - [ ] Become better at working with the file system and writing scripts
   - [ ] Contribute to an open source Python project
   - [ ] Learn how to use tox to test other Python versions with py.test
