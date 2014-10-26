@@ -22,3 +22,5 @@ An outline of my personal goals are listed below. These tasks are broken down in
   - [ ] Learn how to use Django Rest Framework with Angular
   - [ ] Build a base template in Django 1.7 for easier startup
   - [ ] Blog about reading Django source to write better Django code
+- [ ] Learn C programming
+  - [ ] Go through [Learn C The Hard Way](http://c.learncodethehardway.org/book/)
