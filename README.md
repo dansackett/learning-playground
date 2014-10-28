@@ -25,6 +25,7 @@ An outline of my personal goals are listed below. These tasks are broken down in
   - [ ] Create reusable configs for uWSGI and Gunicorn setups
 - [ ] Learn C programming
   - [ ] Go through [Learn C The Hard Way](http://c.learncodethehardway.org/book/)
+  - [ ] Learn general C syntax
 - [ ] Learn Basic System Administration
   - [ ] Learn about NGINX configs
   - [ ] Learn about supervisor configs
