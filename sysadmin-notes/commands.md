@@ -27,3 +27,30 @@ iptables - Firewall
 FILE | column -t - Create table based on spaces
 FILE | column -t -s "DELIMETER" - Create table based on delimeter
 FILE | tr ' ', ',' - Replace spaces with commas
+COMMAND | tee file1 file2 file3 - Writes the command output to all files specified
+md5sum FILE - Returns the MD5 checksum of a file to match against changes
+uname -a - Show details about OS and Kernel
+find -name PATTERN - Find files in given directory based on pattern
+
+ifconfig - Check active network interfaces
+ifconfig -a - Check ALL network interfaces
+ifconfig eth0 down/up - Bring an interface up or down
+ifconfig eth0 192.168.1.12 - Assign IP to interface
+
+netstat - List all network ports
+
+nslookup DOMAIN - Gets DNS information on a domain
+nslookup -query=mx DOMAIN - Get MX record
+nslookup -type=ns DOMAIN - Get name server records
+nslookup -type=any DOMAIN - Query DNS
+nslookup -type=soa DOMAIN - Query start of authority
+nslookup -port 56 DOMAIN - Query port
+
+dig DOMAIN - QUery DNS nameservers for info about host addresses, ns, etc
+dig DOMAIN +nocomments - No comments
+
+uptime - Get uptime of server
+
+w - Return uptime and who commands
+
+mysqldump -u root -p DBNAME > file.sql
