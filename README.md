@@ -29,5 +29,5 @@ An outline of my personal goals are listed below. These tasks are broken down in
 - [ ] Learn Basic System Administration
   - [ ] Learn about NGINX configs
   - [ ] Learn about supervisor configs
-  - [ ] Learn about basic server managment commands
+  - [ ] Learn about basic server managment commands (https://sysadmincasts.com)
   - [ ] Learn Docker
