@@ -10,7 +10,7 @@ An outline of my personal goals are listed below. These tasks are broken down in
   - [ ] Watch egghead.io videos on more in depth skills
   - [ ] Blog about getting started with Angular
 - [ ] Continuing learning intricacies of Python
-  - [ ] Become better with using built-in functions
+  - [X] Become better with using built-in functions
   - [X] Become better with itertools functions
   - [X] Become better at working with the file system and writing scripts
   - [ ] Contribute to an open source Python project
@@ -30,3 +30,4 @@ An outline of my personal goals are listed below. These tasks are broken down in
   - [ ] Learn about NGINX configs
   - [ ] Learn about supervisor configs
   - [ ] Learn about basic server managment commands
+  - [ ] Learn Docker
