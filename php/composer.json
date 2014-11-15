@@ -1,7 +1,0 @@
-{
-    "require": {
-        "chrisboulton/php-resque": "1.2.x",
-        "chrisboulton/php-resque-scheduler": "1.1",
-        "guzzle/guzzle": "v3.8.1"
-    }
-}
