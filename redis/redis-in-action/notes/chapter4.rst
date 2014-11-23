@@ -78,19 +78,54 @@ spreadthe load out.
 4.3: System Failures
 --------------------
 
+When dealing with system failures, we have two commands we can run from the
+terminal. ``redis-check-aof --fix`` for AOF and ``redis-check-dump`` for snapshots.
 
+If things hae royally gone to shit, we can replace a master instance. The
+scenario is as follows:
+
+- Machine A goes down.
+- Machine B is a slave to machine A.
+- Machine C is a fresh Redis Server that we want to be the new master.
+
+To make the transition we could do something like::
+
+    Machine-B: $ redis-cli
+        redis > SAVE
+        OK
+        redis > QUIT
+    Machine-B: $ scp /var/local/redis/dump.rdb MACHINE_C:/var/local/redis/dump.rdb
+    Machine-B: $ ssh MACHINE_C
+    Machine-C: $ sudo /etc/init.d/redis-server start
+    Machine-C: $ exit
+    Machine-B: $ redis-cli
+        redis > SLAVEOF MACHINE_C 6379
+        OK
+        redis > QUIT
+    Machine-B: $ exit
+
+We can also choose to make the slave the new master and create a new slave
+instance. Either way, the transition isn't too bad. Today, Redis Sentinels can
+be used to monitor these things and handle failover which isn't until chapter
+10.
 
 4.4: Transactions
 -----------------
 
+We can think of Redis transactions as thread locks. They help avoid data
+corruption and also can be good for performance. To use them, we start a batch
+of commands with ``MULTI`` and the commands aren't run until ``EXEC`` is run.
+It is also known as pipelining and helps improve performance because it
+reduces the number of round trips back and forth to Redis.
 
+Another command we can use to handle 'thread-safe' like features is the
+``WATCH`` command. When we watch a key, if anyone alters the key in the middle
+of a transaction block, then the transaction will fail.
 
 4.5: Non-Transational Pipelines
 -------------------------------
 
-
-
-4.6: Performance Considerations
--------------------------------
-
-
+When we want to send more than one command to Redis, the result of one command
+doesn't affect another, and we don't care to execute all of these
+transactionally, we can pass false to a ``pipeline`` to save even more on
+performance.
