@@ -8,20 +8,18 @@
 # is 9009 = 91 x 99.
 
 # Find the largest palindrome made from the product of two 3-digit numbers.
-import time
-
 def main():
-    change = base = 999
+    a = b = 999
     solution = False
 
-    while base > 99 and change > 99:
-        product = base * change
+    while a > 99 and b > 99:
+        product = a * b
 
-        if change == 100:
-            base -= 1
-            change = 999
+        if a == 100:
+            a = 999
+            b -= 1
         else:
-            change -= 1
+            a -= 1
 
         if str(product) == str(product)[::-1]:
             solution = product if product > solution else solution
@@ -30,7 +28,4 @@ def main():
 
 
 if __name__ == '__main__':
-    start = time.time()
     main()
-    elapsed = (time.time() - start)
-    print "Found in %s seconds" % (elapsed)
