@@ -3,6 +3,9 @@ Utility Functions
 """
 def is_prime(number):
     """Check if a number if prime"""
+    if number == 2:
+        return True
+
     if not number % 2:
         return False
 
