@@ -27,24 +27,15 @@ divisors?
 from utils import get_factors
 from operator import add
 
-def main(factors):
-    current = 1
-    divisors = 0
-    triangle_num = 0
+factors = 500
+current = 1
+divisors = 0
+triangle_num = 0
 
-    while divisors < factors:
-        current += 1
-        triangle_num = sum(xrange(1, current + 1))
-        # triangle_num = reduce(add, xrange(1, current + 1))
-        if not triangle_num % 2:
-            divisors = len(get_factors(triangle_num))
+while divisors < factors:
+    current += 1
+    triangle_num = current * (current + 1) / 2
+    if not triangle_num % 2:
+        divisors = len(get_factors(triangle_num))
 
-    print current
-
-
-if __name__ == '__main__':
-    import time
-    start = time.time()
-    main(500)
-    end = time.time() - start
-    print '{end}s'.format(**locals())
+print triangle_num

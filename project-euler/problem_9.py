@@ -12,21 +12,17 @@ a**2 + b**2 = c**2
 There exists exactly one Pythagorean triplet for which a + b + c = 1000.
 Find the product abc.
 """
+limit = 1000
 
-def main(limit):
-    for a in xrange(3, limit):
-        for b in xrange(a + 1, limit):
-            c = limit - (a + b)
+for a in xrange(3, limit):
+    for b in xrange(a + 1, limit):
+        c = limit - (a + b)
 
-            if a + b > limit:
-                continue
+        if a + b > limit:
+            continue
 
-            if c <= b:
-                continue
+        if c <= b:
+            continue
 
-            if sum([a, b, c]) == 1000 and (a**2 + b**2) == c**2:
-                print reduce(lambda x, y: x * y, [a, b, c])
-
-
-if __name__ == '__main__':
-    main(1000)
+        if sum([a, b, c]) == 1000 and (a**2 + b**2) == c**2:
+            print reduce(lambda x, y: x * y, [a, b, c])

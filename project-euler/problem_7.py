@@ -11,18 +11,13 @@ What is the 10,001th prime number?
 """
 from utils import is_prime
 
+limit = 10001
+current = 1
+count = 1
 
-def main(limit):
-    current = 1
-    count = 1
+while count < limit:
+    current += 2
+    if is_prime(current):
+        count += 1
 
-    while count < limit:
-        current += 2
-        if is_prime(current):
-            count += 1
-
-    print current
-
-
-if __name__ == '__main__':
-    main(10001)
+print current
