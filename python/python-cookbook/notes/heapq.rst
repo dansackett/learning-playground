@@ -68,4 +68,4 @@ The reasoning for each piece:
 * We have an index to help sort when items have the same priority
 * The item is the item itself
 
-This structure can be seen `here </learning-playground/python/python-cookbook/code/heapq.py>`_.
+This structure can be seen `here </https://github.com/dansackett/learning-playground/python/python-cookbook/code/heapq.py>`_.
