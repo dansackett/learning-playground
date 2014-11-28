@@ -23,7 +23,7 @@ Not all of the code is mine as some is from book examples, but writing helps me 
 
 - [Redis in Action](http://www.manning.com/carlson/) by _Josiah L. Carlson_
 - [Python Cookbook: 3rd Edition](http://shop.oreilly.com/product/0636920027072.do) by _David Beazley and Brian K. Jones_
-- 
+
 ### Books I want to Read
 
 - [High Performance Django](https://highperformancedjango.com/) by _Peter Baumgartner and Yann Malet_
