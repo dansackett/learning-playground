@@ -41,3 +41,33 @@ def timer(func):
         print 'It took {end} seconds'.format(**locals())
 
     return wrapper
+
+class Fib:
+    """
+    Generate the fibonacci terms
+    """
+    def __init__(self, limit):
+        self.limit = limit
+        self.total = 0
+        self.last = 1
+        self.current = 2
+
+    def __iter__(self):
+        while self.current < self.limit:
+            yield self.current
+            self.current, self.last = self.current + self.last, self.current
+
+    def sum(self):
+        for x in self:
+            self.total += x
+        return self.total
+
+    def sum_even(self):
+        for x in self:
+            self.total += x if not x % 2 else 0
+        return self.total
+
+    def sum_odd(self):
+        for x in self:
+            self.total += x if x % 2 else 0
+        return self.total

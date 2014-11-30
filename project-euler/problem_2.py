@@ -12,13 +12,7 @@ two terms. By starting with 1 and 2, the first 10 terms will be:
 By considering the terms in the Fibonacci sequence whose values do not
 exceed four million, find the sum of the even-valued terms.
 """
-limit = 4000000
-last = 1
-current = 2
-total = 0
+from utils import Fib, timer
 
-while current < limit:
-    total += current if not current % 2 else 0
-    current, last = current + last, current
-
-print total
+f = Fib(4000000)
+print f.sum_even()
