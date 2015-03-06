@@ -154,9 +154,6 @@ architecthure that complements unidirectional flow.
 The basic parts of Flux are a `Dispatcher` and NodeJS's `EventEmitter`. A list
 of the components with Flux are:
 
-- Actions: Helpers that pass data to dispatche. A list of the components with
-  Flux are:
-
 - Actions: Helpers that pass data to dispatcher.
 - Dispatcher: Pub/Sub manager broadcasting payloads to callbacks.
 - Stores: Containers for state / logic with callbacks on a Dispatcher.
